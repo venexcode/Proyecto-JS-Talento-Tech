@@ -1,0 +1,9 @@
+Version Va.b.c
+
+Version a = produccion
+b = pre-produccion
+c = desarrollo
+
+git init = inicializa un repositorio en la carpeta actual, pero antes de generarlo pasan a un staging area (area de ensayo) donde quedan en un estilo de espera.
+git add . = añade los archivos inicializados al staging area.
+git commit -m "titulo" = pasa la carpeta inicializada con los archivos a la carpeta repositorio creada en GitHub
