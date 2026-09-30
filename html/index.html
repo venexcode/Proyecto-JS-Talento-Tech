@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VNX SGT | Sistema de gestión para talleres automotrices</title>
+  <meta name="description" content="Recepción digital, órdenes de trabajo, stock de repuestos y presupuestos en un solo sistema para tu taller.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'%3E%3Cg fill='%23ff9f1a'%3E%3Crect x='16' y='14' width='30' height='24' rx='2'/%3E%3Crect x='20' y='8' width='12' height='6'/%3E%3Crect x='34' y='10' width='8' height='4'/%3E%3Crect x='8' y='20' width='8' height='12'/%3E%3Crect x='2' y='24' width='6' height='4'/%3E%3Crect x='46' y='18' width='8' height='16'/%3E%3Crect x='54' y='22' width='6' height='8'/%3E%3Crect x='20' y='38' width='22' height='4'/%3E%3C/g%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#servicios">Ir al contenido</a>
+
+  <header class="main-header">
+    <a href="#inicio" class="logo-container" aria-label="VNX SGT, inicio">
+      <img class="logo-icon" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/check-engine-light-icon-svg-download-png-13235533.png?f=webp&w=128" alt="">
+      <span class="logo-brand">VNX</span>
+      <span class="logo-system">SGT</span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+
+    <nav class="main-nav" aria-label="Principal">
+      <ul class="nav-links">
+        <li><a href="#servicios">Módulos</a></li>
+        <li><a href="#proceso">Cómo funciona</a></li>
+        <li><a href="#precios">Planes</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="#contacto" class="nav-cta">Solicitar demo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Todo tu taller, en una sola pantalla.</h1>
+          <p>Recibí vehículos, asigná mecánicos, controlá repuestos y enviá presupuestos sin papeles ni planillas sueltas.</p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn-primary"><i class="fa-solid fa-calendar-check"></i> Solicitar demo</a>
+            <a href="#servicios" class="btn-secondary"><i class="fa-solid fa-gears"></i> Ver módulos</a>
+          </div>
+          <p class="hero-note">14 días de prueba gratis. Sin tarjeta.</p>
+        </div>
+
+        <div class="hero-visual">
+          <img class="hero-car" src="/img/img_out.png" alt="Vehículo en diagnóstico con alerta de check engine">
+          <aside class="hero-ticket" aria-label="Ejemplo de orden de trabajo">
+          <div class="ticket-head">
+            <strong><i class="fa-solid fa-screwdriver-wrench"></i> Orden #1042</strong>
+            <span class="pill pill-live">En reparación</span>
+          </div>
+          <dl class="ticket-data">
+            <div><dt>Vehículo</dt><dd>VW Amarok 2021</dd></div>
+            <div><dt>Patente</dt><dd>AF 482 KD</dd></div>
+            <div><dt>Mecánico</dt><dd>Diego R.</dd></div>
+            <div><dt>Entrega estimada</dt><dd>Hoy, 17:30</dd></div>
+          </dl>
+          <div class="ticket-progress" aria-hidden="true"><span></span></div>
+        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Resultados">
+      <div class="stats-inner">
+        <p><i class="fa-solid fa-stopwatch"></i><strong>50%</strong> menos tiempo de recepción</p>
+        <p><i class="fa-solid fa-shield-halved"></i><strong>0</strong> reclamos por daños previos</p>
+        <p><i class="fa-solid fa-chart-line"></i><strong>+30%</strong> de rentabilidad por reparación</p>
+      </div>
+    </section>
+
+    <section id="servicios" class="section-container">
+      <div class="section-head">
+        <h2 class="section-title">Cuatro módulos, un solo flujo</h2>
+        <p class="section-subtitle">Cada área del taller trabaja con la misma información, en tiempo real.</p>
+      </div>
+
+      <div class="cards-flex">
+        <article class="card">
+          <h3><i class="fa-solid fa-clipboard-check"></i> Recepción e inspección</h3>
+          <p>Checklist de ingreso, fotos del estado del vehículo y diagnóstico inicial de fallas.</p>
+          <span class="card-status status-active">Activo</span>
+        </article>
+
+        <article class="card">
+          <h3><i class="fa-solid fa-screwdriver-wrench"></i> Órdenes de trabajo</h3>
+          <p>Asignación de mecánicos, tiempos estimados de mano de obra y seguimiento de cada reparación.</p>
+          <span class="card-status status-active">Activo</span>
+        </article>
+
+        <article class="card">
+          <h3><i class="fa-solid fa-boxes-stacked"></i> Stock de repuestos</h3>
+          <p>Inventario, alertas de stock mínimo y trazabilidad de las piezas usadas en cada orden.</p>
+          <span class="card-status status-active">Activo</span>
+        </article>
+
+        <article class="card">
+          <h3><i class="fa-solid fa-file-invoice-dollar"></i> Facturación y presupuestos</h3>
+          <p>Cotizaciones automáticas, desglose de repuestos y mano de obra, y cobro online.</p>
+          <span class="card-status status-active">Activo</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="proceso" class="section-container bg-alt">
+      <div class="section-head">
+        <h2 class="section-title">Del ingreso a la entrega</h2>
+        <p class="section-subtitle">El recorrido de un vehículo dentro de VNX SGT.</p>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <img src="https://images.unsplash.com/photo-1625047509252-ab38fb5c7343?auto=format&fit=crop&w=600&h=400&q=70" alt="Cliente junto a su vehículo en la recepción del taller" loading="lazy">
+          <div class="step-body"><h3><i class="fa-solid fa-car-side"></i> Ingresa</h3>
+          <p>Se completa el checklist y se suben las fotos desde el celular.</p></div>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?auto=format&fit=crop&w=600&h=400&q=70" alt="Persona revisando un presupuesto en su celular" loading="lazy">
+          <div class="step-body"><h3><i class="fa-solid fa-file-invoice-dollar"></i> Se presupuesta</h3>
+          <p>El sistema arma la cotización y el cliente la aprueba por WhatsApp.</p></div>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?auto=format&fit=crop&w=600&h=400&q=70" alt="Mecánico reparando el motor de un auto" loading="lazy">
+          <div class="step-body"><h3><i class="fa-solid fa-wrench"></i> Se repara</h3>
+          <p>El mecánico registra tiempos y repuestos usados en la orden.</p></div>
+        </li>
+        <li>
+          <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=600&h=400&q=70" alt="SUV listo dentro del taller" loading="lazy">
+          <div class="step-body"><h3><i class="fa-solid fa-key"></i> Se entrega</h3>
+          <p>Se factura, se cobra y el historial queda guardado.</p></div>
+        </li>
+      </ol>
+    </section>
+
+
+    <section id="capacitacion" class="section-container">
+      <div class="section-head">
+        <h2 class="section-title">Mirá el sistema en acción</h2>
+        <p class="section-subtitle">Así se ve el flujo de recepción y diagnóstico en fosa.</p>
+      </div>
+
+      <div class="media-container">
+        <div class="video-responsive">
+          <iframe
+            src="https://www.youtube.com/embed/EDSTDHU6oFI"
+            title="Demostración del Sistema de Gestión de Taller Automotriz"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="precios" class="section-precios bg-alt">
+      <div class="precios-container">
+        <div class="section-head">
+          <h2 class="section-title">Planes según el tamaño de tu taller</h2>
+          <p class="section-subtitle">Precios en dólares por mes. Cambiá de plan o cancelá cuando quieras.</p>
+        </div>
+
+        <div class="precios-grid">
+
+          <article class="precio-card">
+            <div class="precio-card-header">
+              <h3>Taller Inicial</h3>
+              <p class="precio-desc">Para talleres independientes o especialistas únicos.</p>
+              <div class="precio-monto">
+                <span class="moneda">$</span><span class="valor">29</span><span class="periodo">/ mes</span>
+              </div>
+            </div>
+            <ul class="precio-features">
+              <li>Hasta 50 órdenes de trabajo por mes</li>
+              <li>Checklist digital básico</li>
+              <li>Gestión de clientes y vehículos</li>
+              <li>Reportes por email</li>
+              <li class="disabled">Integración con WhatsApp</li>
+              <li class="disabled">Control avanzado de stock</li>
+            </ul>
+            <a href="#contacto" class="btn-precio btn-outline">Probar 14 días gratis</a>
+          </article>
+
+          <article class="precio-card popular">
+            <div class="popular-tag">Más elegido</div>
+            <div class="precio-card-header">
+              <h3>Taller Pro</h3>
+              <p class="precio-desc">Para talleres multimarca con alto flujo de unidades.</p>
+              <div class="precio-monto">
+                <span class="moneda">$</span><span class="valor">69</span><span class="periodo">/ mes</span>
+              </div>
+            </div>
+            <ul class="precio-features">
+              <li>Órdenes de trabajo ilimitadas</li>
+              <li>Checklist e inspección ADAS completa</li>
+              <li>Presupuestos por WhatsApp</li>
+              <li>Stock e historial de repuestos</li>
+              <li>Productividad por mecánico</li>
+              <li>Soporte prioritario por chat</li>
+            </ul>
+            <a href="#contacto" class="btn-precio btn-solid">Comenzar ahora</a>
+          </article>
+
+          <article class="precio-card">
+            <div class="precio-card-header">
+              <h3>Red / Flotas</h3>
+              <p class="precio-desc">Para redes de talleres, concesionarios y grandes flotas.</p>
+              <div class="precio-monto">
+                <span class="moneda">$</span><span class="valor">149</span><span class="periodo">/ mes</span>
+              </div>
+            </div>
+            <ul class="precio-features">
+              <li>Múltiples sucursales</li>
+              <li>Integración API personalizada</li>
+              <li>Roles y permisos a medida</li>
+              <li>Reportes financieros y exportación a ERP</li>
+              <li>Capacitación presencial o remota</li>
+              <li>Ejecutivo de cuenta dedicado</li>
+            </ul>
+            <a href="#contacto" class="btn-precio btn-outline">Contactar a ventas</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section-container">
+      <div class="section-head">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>¿Necesito instalar algo?</summary>
+          <p>No. VNX SGT funciona desde el navegador, en computadora, tablet o celular.</p>
+        </details>
+        <details>
+          <summary>¿Puedo migrar mis clientes y vehículos actuales?</summary>
+          <p>Sí. Nuestro equipo te ayuda a importar tus planillas sin costo en los planes Pro y Red / Flotas.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa cuando termina la prueba gratis?</summary>
+          <p>Elegís un plan o cancelás. No hay cobros automáticos durante los 14 días de prueba.</p>
+        </details>
+        <details>
+          <summary>¿Los mecánicos necesitan capacitación?</summary>
+          <p>La interfaz es simple y se aprende en una tarde. Incluimos capacitación en el plan Red / Flotas.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-container bg-alt">
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <h2 class="section-title">Solicitar demo o soporte</h2>
+          <p class="section-subtitle">Contanos cuántos elevadores o mecánicos tiene tu taller y te recomendamos el plan indicado. Respondemos en el día.</p>
+        </div>
+
+        <form action="https://formspree.io/f/meaoagzv" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre y apellido o taller</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Taller Mecánico Silva" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Consulta</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cantidad de elevadores o mecánicos, y qué querés resolver" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> Enviar solicitud</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div>
+        <p class="footer-brand"><svg class="logo-icon footer-icon" viewBox="0 0 64 48" aria-hidden="true"><g fill="currentColor"><rect x="16" y="14" width="30" height="24" rx="2"/><rect x="20" y="8" width="12" height="6"/><rect x="34" y="10" width="8" height="4"/><rect x="8" y="20" width="8" height="12"/><rect x="2" y="24" width="6" height="4"/><rect x="46" y="18" width="8" height="16"/><rect x="54" y="22" width="6" height="8"/><rect x="20" y="38" width="22" height="4"/></g></svg> <span>VNX</span> SGT</p>
+        <p class="footer-sub">Software de gestión para talleres mecánicos, de chapa y pintura, y centros de lubricación.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#servicios">Módulos</a></li>
+        <li><a href="#precios">Planes</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <p class="footer-copy">&copy; 2026 VNX SGT. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
